@@ -47,5 +47,210 @@
         </tfoot>
     </table>
 
+    <hr>    <!-- 줄 긋기 -->
+
+    <table>
+            <tr>
+                <td><img src="../../images/fruit1.jpg" width="200"></td>
+                <td><img src="../../images/fruit2.jpg" width="200"></td>
+                <td><img src="../../images/fruit3.jpg" width="200"></td>
+            </tr>
+            <tr>
+                <td>10,000원<br>
+                    <strong>베리</strong>
+                </td>
+                <td>20,000원<br>
+                    <strong>아보카도</strong>
+                </td>
+                <td>30,000원<br>
+                    <strong>바나나</strong>
+                </td>
+            </tr>
+    </table>
+
+    <hr>
+
+    <!-- 
+        셀 병합
+        1. <td> 태그의 속성으로 병합한다.
+        2. 병합 속성
+            1) colspan : 열 병합, 좌우 셀을 하나로 병합
+            2) rowspan : 행 병합, 상하 셀을 하나로 병합
+    -->
+
+    <!-- 열 병합 -->
+    <table border="1">
+        <tbody>
+            <tr>
+                <td>1열</td>
+                <td>2열</td>
+                <td>3열</td>
+            </tr>
+            <tr>
+                <td>1열</td>
+                <td colspan="2">2~3열</td>
+            </tr>
+            <tr>
+                <td colspan="3">1~3열</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 행 병합 -->
+    <table border="1">
+        <tbody>
+            <tr>
+                <td>1행</td>
+                <td rowspan="2">1~2행</td>
+                <td rowspan="3">1~3행</td>
+            </tr>
+            <tr>
+                <td>2행</td>
+            </tr>
+            <tr>
+                <td>3행</td>
+                <td>3행</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    
+    
+        <!-- 연습문제 1 -->
+        <h2>연습문제1</h2>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <th colspan="2">이름</th>
+                    <td>나이</td>
+                    <th colspan="5">주소</th>
+                </tr>
+                <tr>
+                    <td colspan="2">홍길동</td>
+                    <td>20세</td>
+                    <td colspan="5">서울시 마포구 노고산동</td>
+                </tr>
+                <tr>
+                    <th colspan="2">특기</th>
+                    <td colspan="6">먹기</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">신체</th>
+                    <td colspan="6">180.0cm</td>
+                </tr>
+                <tr>
+                    <td colspan="6">83kg</td>
+                </tr>
+            </tbody>
+        </table>
+    
+
+   
+        <!-- 연습문제 2 -->
+        <h2>연습문제2</h2>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td rowspan="5">1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td rowspan="2">13</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td colspan="5">19</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    <hr>
+
+    <!-- 연습문제 3 -->
+    <h2>연습문제3</h2>
+    <table border="1">
+        <tbody>
+            <tr>
+                <td colspan="4">1</td>
+                <td rowspan="7">2</td>
+            </tr>
+            <tr>
+                <td rowspan="5">3</td>
+                <td rowspan="4">4</td>
+                <td colspan="2">5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td rowspan="4">7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td colspan="2">10</td>
+            </tr>
+            <tr>
+                <td colspan="4">11</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 연습문제4 -->
+    <h2>연습문제4</h2>
+    <table border="1">
+        <caption>우리펜션 객실안내</caption>
+        <tr>
+            <th colspan="2">방이름</th>
+            <th colspan="2">고객구분</th>
+            <th>정원</th>
+            <th colspan="2">가격</th>
+        </tr>
+        <tr>
+            <td colspan="2">콜로라도</td>
+            <td colspan="2">여성 전용</td>
+            <td rowspan="3">4인실</td>
+            <td rowspan="4">100,000원</td>
+        </tr>
+        <tr>
+            <td colspan ="2" rowspan="2">아레나도</td>
+            <td colspan="2">가족용</td>
+        </tr>
+        <tr>
+            <td colspan="2">커플용</td>
+        </tr>
+        <tr>
+            <td colspan="2">엘레나</td>
+            <td colspan="2">커플 전용</td>
+            <td>2인실</td>
+        </tr>
+        <tr>
+            <th colspan="7">6월 15일까지 전 객실 50% 할인</th>
+        </tr>
+    </table>
 </body>
 </html>
