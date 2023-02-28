@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* div 공통 작업 */
+        div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid gray;
+        }
+    </style>
+
+    <style>
+        /* 
+            @-webkit-keyframes : 크롬, 사파리
+            @-moz-keyframes    : 파이어폭스
+            @-o-keyframes      : 오페라
+            @-ms-keyframes     : 익스플로러
+        */
+        @keyframes sun {
+            /* from : 애니메이션 시작 지점(0%) */
+            from {
+                background-color: crimson;
+                opacity: 0; /* 투명한 상태(안 보임) */
+                border-radius: 50px;
+                opacity: 0;
+            }
+            /* to : 애니메이션 종료 지점(100%) */
+            to {
+                background-color: crimson;
+                border-radius: 50px;
+                opacity: 1; /* 불투명한 상태(보임) */
+            }
+        }
+        .box1 {
+            animation-name: sun;                 /* 실행할 애니메이션 이름 : keyframes 참고 */
+            animation-duration: 3s;              /* 애니메이션 실행 시단(초) */
+            animation-timing-function: ease;     /* 애니메이션 동작시간 배분 */
+            animation-iteration-count: infinite; /* 애니메이션 동작 횟수 */
+            animation-delay: 1s;                 /* 애니메이션이 1초 후 동작 */
+            animation-direction: alternate;      /* 애니메이션 방향 변경 */
+
+        }
+    </style>
+    <div class="box1">
+        BOX1
+    </div>
+
+    <style>
+        @keyframes fancy {
+            0% {background-color: teal;}
+            12.5% {background-color: chocolate;}
+            25% {background-color: greenyellow;}
+            37.5% {background-color: crimson;}
+            50% {background-color: aqua;}
+            62.5% {background-color: black;}
+            75% {background-color: deeppink;}
+            87.5% {background-color: blueviolet;}
+            1000% {background-color: bisque;}
+        }
+        .neon {
+            /* animation 단축 속성 */
+            animation: fancy 1s ease infinite;
+        }
+    </style>
+    <div class="neon">
+
+    </div>
+
+    <style>
+        @keyframes monwalk {
+            0% {margin-left: 0;}
+            100% {margin-left: 300px;}
+        }
+        .box3 {
+            animation: monwalk 1s ease-in-out infinite alternate;
+        }
+    </style>
+    <div class="box3"></div>
+</body>
+</html>
