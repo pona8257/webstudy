@@ -144,7 +144,11 @@
         
         for(let i=0; i < chkOneList.length; i++){
             chkOneList[i].onclick = function(){
-                
+                let chkCount = 0;
+                for(let j = 0; j < chkOneList.length; j++){
+                    chkCount += chkOneList[j].checked;
+                }
+                chkAll.checked = (chkOneList.length == chkCount);   // ==으로 동등비교를 해 chkCount가 3개일 때만 true 즉 모두동의 체크
             }
         }
 
