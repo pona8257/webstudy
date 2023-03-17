@@ -168,13 +168,13 @@
                 // 응답
                 dataType: 'text',
                 success: function(data){
-                    callback(data);
+                    callback(data); // 응답 결과를 다른 함수로 넘겨서 처리
                 }
             });
         }
 
         fnFunc(function(data){
-            alert(data);
+            alert(data);    // 매개변수 callback으로 전달되는 익명 함수
         });
 
     </script>
