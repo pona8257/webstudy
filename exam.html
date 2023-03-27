@@ -21,10 +21,7 @@
             alert('전송합니다.');
         })
 
-        // 3. 인라인 이벤트
-        function btn_push(){
-            alert('전송합니다');
-        }
+        
 
     </script>
 
@@ -36,9 +33,9 @@
         }
     </script>
 
-<button id="to_site">이동</button>
+<button id="to_site" onclick="btn_push()">이동</button>
     <script>
-        document.getElementById('to_site').onclick = function(){
+        function btn_push() {
             location.href="https://www.google.com"; // 바로 이동
             또는
             open('https://www.google.com');         // 새 창

@@ -1,3 +1,28 @@
 .wrap {
+    width: 420px;
+    text-align: center;
+}
+.id_wrap {
+    width: 100%;
+    height: 30px;
+    margin-top: 13px;
+    border: 1px solid #007700;
+}
+.pw_wrap {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #007700;
+}
+.wrap_btn{
+    width: 100%;
+    height: 50px;
+    background-color: #007700;
+    border: #007700;
+    text-align: center;
     
+}
+.wrap_btn > .btn_text {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
 }

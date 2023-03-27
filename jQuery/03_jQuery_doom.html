@@ -36,8 +36,8 @@
             console.log($('#ott').find('li'));              // 자식 중 li 태그
             console.log($('#ott a'));                       // 후손 중 a 태그
             console.log($('#ott').find('a'));               // 후손 중 a 태그
-            console.log($('#ott').children());              // 자식
-            console.log($('#ott').children().children());   // 자식의 자식
+            console.log($('#ott').children());              // 모든 자식
+            console.log($('#ott').children().children());   // 모든 자식의 자식
 
             /*
                 메소드 체이닝(method chaining)
@@ -50,7 +50,7 @@
             console.log($('#netflex').siblings());      // 모든 형제 
             console.log($('#netflex + li'));            // 인접 형제 li 태그
             console.log($('#netflex').next());          // 인접 형제
-            console.log($('#wave').nextAll());          // 다음 모드 형제
+            console.log($('#wave').nextAll());          // 다음 모든 형제
             console.log($('#wave').prev());             // 이전 형제
             console.log($('#wave').prevAll());          // 이전 모든 형제
 
@@ -85,15 +85,15 @@
             console.log($(':text'));                    // input type=text
             console.log($(':password'));                // input type=password
             console.log($(':radio'));                   // input type=radio
-            console.log($('#ftm :text'));                    // input type=text
+            console.log($('#frm :text'));                    // input type=text
             console.log($('#frm :password'));                // input type=password
             console.log($('#frm :radio'));                   // input type=radio
 
             // 상태로 지정하기(:focus, :checked, :selected)
-            console.log($('#frm :focus'));
-            console.log($('#frm :checked'));
-            console.log($('#frm :radio checked'));
-            console.log($('#frm :selected'));
+            console.log($('#frm :focus'));              // 포커스를 가진 요소
+            console.log($('#frm :checked'));            // 체크된 요소(radio, checkbox, select)
+            console.log($('#frm :radio checked'));      // radio 중 체크된 요소
+            console.log($('#frm :selected'));           // 선택된 요소(select)
 
             // 상태 확인 메소드
             // is(':focus')      :포커스를 가졌다면 true 반환

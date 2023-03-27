@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,22 +19,24 @@
         </header>
         <section>
             <form id="frm_login" method="post" action="/">
-                <div>
+                <div class="wrap_radio">
                     <strong>※ 회원구분을 위해 체크해 주세요</strong>
                     <input type="radio" name="gubun" value="1" id="sugangsang">
                     <label for="sugangsang">수강생</label>
                     <input type="radio" name="gubun" value="2" id="ilban">
                     <label for="ilban">일반회원</label>
                 </div>
-                <div>
-                    <input type="text" name="id" id="id" placeholder="아이디">
+                <div >
+                    <input type="text" class="id_wrap" name="id" id="id" placeholder="아이디">
                     <div id="msg_id"></div>
                 </div>
-                <div>
-                    <input type="password" name="pw" id="pw" placeholder="●●●●">
+                <div >
+                    <input type="password" class="pw_wrap" name="pw" id="pw" placeholder="●●●●">
                 </div>
                 <div>
-                    <button>로그인</button>
+                    <button class="wrap_btn">
+                        <span class="btn_text">로그인</span>
+                    </button>
                 </div>
             </form>
         </section>
